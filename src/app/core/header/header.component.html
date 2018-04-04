@@ -1,0 +1,15 @@
+<nav>
+  <div>
+    <div>
+      <a [routerLink]="['/']">{{title}}</a>
+    </div>
+    <ul>
+      <li role="menuitem" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+        <a [routerLink]="['/welcome']">Home</a>
+      </li>
+      <li role="menuitem" routerLinkActive="active">
+        <a queryParamsHandling="merge" [routerLink]="['/login']">Login</a>
+      </li>
+    </ul>
+  </div>
+</nav>
